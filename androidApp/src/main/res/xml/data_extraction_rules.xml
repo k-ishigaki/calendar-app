@@ -1,0 +1,21 @@
+<data-extraction-rules>
+
+    <!-- Googleアカウントに対するクラウドバックアップを無効化する設定 -->
+    <cloud-backup>
+        <exclude domain="file" path=".*"/>
+        <exclude domain="database" path=".*"/>
+        <exclude domain="sharedpref" path=".*"/>
+        <exclude domain="root" path=".*"/>
+        <exclude domain="external" path=".*"/>
+    </cloud-backup>
+
+    <!-- デバイス間移行（端末交換など）時のバックアップを無効化する設定 -->
+    <device-transfer>
+        <exclude domain="file" path=".*"/>
+        <exclude domain="database" path=".*"/>
+        <exclude domain="sharedpref" path=".*"/>
+        <exclude domain="root" path=".*"/>
+        <exclude domain="external" path=".*"/>
+    </device-transfer>
+
+</data-extraction-rules>
